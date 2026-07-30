@@ -1,17 +1,18 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../assets/img/maci.png";
+const base = import.meta.env.BASE_URL;
 ---
 
 <header class="navbar">
-  <a class="brand" href="/"
+  <a class="brand" href={base}
     ><Image src={logo} alt="MACI" height={94} densities={[1, 2, 3]} /></a
   >
   <nav>
     <a href="#como-funciona">Cómo funciona</a>
     <a href="#caracteristicas">Características</a>
     <a href="#capturas">Capturas</a>
-    <a href="/contact">Contacto</a>
+    <a href={`${base}contact`}>Contacto</a>
   </nav>
 </header>
 
