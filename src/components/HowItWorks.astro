@@ -1,0 +1,82 @@
+---
+const steps = [
+  { icon: "📱", title: "Crea una cuenta" },
+  { icon: "🏢", title: "Únete a una empresa" },
+  { icon: "❤️", title: "Participa en campañas" },
+  { icon: "🏆", title: "Gana puntos y premios" },
+];
+---
+<section id="como-funciona" class="how">
+  <span class="eyebrow">Cómo funciona</span>
+  <h2>Cuatro pasos y ya estás compitiendo</h2>
+  <div class="steps">
+    {
+      steps.map((step, i) => (
+        <div class="step">
+          <span class="number">{String(i + 1).padStart(2, "0")}</span>
+          <div class="icon">{step.icon}</div>
+          <p>{step.title}</p>
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .how {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 20px;
+    text-align: center;
+  }
+  .eyebrow {
+    display: inline-block;
+    color: var(--primary);
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  h2 {
+    font-size: 30px;
+    margin: 0 0 40px;
+    letter-spacing: -0.01em;
+  }
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .step {
+    position: relative;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 30px 22px;
+    width: 210px;
+    text-align: left;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .step:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 30px rgba(124, 58, 237, 0.12);
+  }
+  .number {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--border);
+  }
+  .icon {
+    font-size: 30px;
+    margin-bottom: 14px;
+  }
+  .step p {
+    font-weight: 600;
+    margin: 0;
+  }
+</style>

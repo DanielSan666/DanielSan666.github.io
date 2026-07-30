@@ -1,0 +1,77 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Términos de Servicio · MACI">
+  <Navbar />
+  <section class="legal">
+    <h1>Términos de Servicio</h1>
+    <p class="updated">Última actualización: 18 de julio de 2026</p>
+
+    <p>Al usar MACI aceptas los siguientes términos:</p>
+
+    <h2>1. Uso del servicio</h2>
+    <p>
+      MACI permite a los usuarios participar en campañas de sus
+      clientes/marcas afiliadas, interactuar con contenido en redes sociales
+      (Facebook, Instagram, TikTok, X, YouTube) y acumular puntos en un
+      ranking que puede otorgar premios.
+    </p>
+
+    <h2>2. Cuentas</h2>
+    <p>
+      Puedes iniciar sesión con usuario/contraseña o con tu cuenta de Google.
+      Eres responsable de mantener la confidencialidad de tus credenciales.
+    </p>
+
+    <h2>3. Conducta</h2>
+    <p>
+      No está permitido falsear interacciones, usar cuentas de terceros sin
+      autorización, ni manipular el ranking de forma fraudulenta.
+    </p>
+
+    <h2>4. Premios</h2>
+    <p>
+      Los premios se otorgan según la posición en el ranking al cierre de
+      cada ciclo, sujeto a disponibilidad y a los términos específicos de
+      cada campaña.
+    </p>
+
+    <h2>5. Contacto</h2>
+    <p>
+      Para dudas sobre estos términos, contáctanos a través de los canales
+      oficiales de la app.
+    </p>
+  </section>
+  <Footer />
+</Layout>
+
+<style>
+  .legal {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 20px 80px;
+    line-height: 1.7;
+  }
+  h1 {
+    font-size: 34px;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .updated {
+    color: var(--text-dim);
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: 36px;
+    margin-bottom: 8px;
+    color: var(--primary);
+  }
+  p {
+    color: var(--text-dim);
+  }
+</style>

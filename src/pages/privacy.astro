@@ -1,0 +1,85 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Política de Privacidad · MACI">
+  <Navbar />
+  <section class="legal">
+    <h1>Política de Privacidad</h1>
+    <p class="updated">Última actualización: 18 de julio de 2026</p>
+
+    <h2>1. Datos que recopilamos</h2>
+    <p>
+      Nombre, correo electrónico, foto de perfil, nombres de usuario en redes
+      sociales que registres (Facebook, Instagram, TikTok, X, YouTube), e
+      información de interacciones con campañas dentro de la app.
+    </p>
+
+    <h2>2. Cómo usamos tus datos</h2>
+    <p>
+      Usamos tus datos para calcular tu puntaje en el ranking, mostrarte
+      campañas relevantes, enviarte notificaciones push, y para contactarte en
+      caso de ganar un premio.
+    </p>
+
+    <h2>3. Inicio de sesión con Google, TikTok u otros proveedores</h2>
+    <p>
+      Si inicias sesión con Google, TikTok, u otro proveedor externo, solo
+      solicitamos tu información básica de perfil (nombre, correo, nombre de
+      usuario público) para crear/verificar tu cuenta. No accedemos a tus
+      contraseñas ni publicamos contenido en tu nombre sin tu acción explícita.
+    </p>
+
+    <h2>4. Compartición de datos</h2>
+    <p>
+      No vendemos tus datos personales a terceros. Compartimos datos
+      únicamente con los clientes/marcas dueños de las campañas en las que
+      participas, limitado a lo necesario para verificar tu participación y
+      otorgar premios.
+    </p>
+
+    <h2>5. Retención y eliminación</h2>
+    <p>
+      Conservamos tus datos mientras tu cuenta esté activa. Puedes solicitar
+      la eliminación de tu cuenta y tus datos contactando al soporte de la
+      app.
+    </p>
+
+    <h2>6. Contacto</h2>
+    <p>
+      Para ejercer tus derechos sobre tus datos, contáctanos a través de los
+      canales oficiales de la app.
+    </p>
+  </section>
+  <Footer />
+</Layout>
+
+<style>
+  .legal {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 20px 80px;
+    line-height: 1.7;
+  }
+  h1 {
+    font-size: 34px;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .updated {
+    color: var(--text-dim);
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: 36px;
+    margin-bottom: 8px;
+    color: var(--primary);
+  }
+  p {
+    color: var(--text-dim);
+  }
+</style>

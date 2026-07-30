@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Contacto · MACI">
+  <Navbar />
+  <section class="contact">
+    <h1>Contacto</h1>
+    <p>
+      ¿Tienes preguntas o eres una marca interesada en lanzar una campaña?
+      Escríbenos.
+    </p>
+    <a class="email" href="mailto:support@maxtres.org">saci97703@gmail.com</a>
+  </section>
+  <Footer />
+</Layout>
+
+<style>
+  .contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  p {
+    color: var(--text-dim);
+    margin-bottom: 24px;
+  }
+  .email {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+  }
+</style>
