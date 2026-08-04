@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.barracudanetworks.saci",
+      "sha256_cert_fingerprints": [
+        "55:EF:A2:0D:72:AF:DC:94:03:94:4A:4E:3B:1F:B3:C6:42:A1:B7:DC:3A:B0:20:FC:C6:41:16:31:AC:1B:D7:4A"
+      ]
+    }
+  }
+]
