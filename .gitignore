@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# belongs to another project's domain, not this site
+public/.well-known/
